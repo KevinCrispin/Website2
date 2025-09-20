@@ -1,39 +1,97 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html>
   <head>
     <title>Website</title>
-    <link rel="icon" type="png" href="Bowling pins.png" style = "border-radius: 50%;">
+    <link rel="icon" type="png" href="Bowling pins.png">
     <style>
       img {
         
-        border-radius: 50%; 
+        border-radius: 22px; 
         float: left;
         width: 200px;
         margin-left: 50px;
         margin-right: 50px;
+        margin-bottom: 100px;
+        margin-top: 3px;
+        transition: box-shadow 0.15s; 
+      }
+      img:hover{
+        box-shadow: 2px 2px 7px rgba(0,0,0,0.5);
       }
       #text{
         font-weight: bold;
-        font-style: italic;
+        color: red;
         font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 50px;
+        margin-bottom: 15px;
         
       }
+      #youtube{
+        background-color: rgb(196, 2, 2);
+        color: white;
+        margin: 10px;
+        border: none;
+        padding: 10px;
+        border-radius:5px;
+        transition: box-shadow 0.15s, opacity 0.15s; 
+      }
+      #youtube:hover{
+        opacity:0.8;
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+      }
+      #youtube:active{
+        opacity:0.6;
+      }
+      #popup{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        margin: 5px;
+        border: none;
+        padding: 10px;
+        border-radius:5px;
+        transition: box-shadow 0.15s, opacity 0.15s; 
+      }
+      #popup:hover{
+        opacity:0.8;
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+      }
+      #popup:active{
+        opacity:0.6;
+      }
+      #contact{
+          background-color: rgb(194, 255, 234);
+          color: black;
+          padding: 9px;
+          border-radius: 6px;
+          margin-left: 10px;
+          transition: color .1s;
+      }
+      #contact:hover{
+        color: rgb(0, 85, 255)
+      }
+      #contact:active{
+        color:rgb(47, 0, 255);
+      }
+      #para{
+        width: 800px;
+      }
+      
     </style>
     <meta charset="utf-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "viewport" content = "width=device-width, initial-scale= 5.0">
     <meta name="description" content="A website about the band Radiohead">
   </head>
   <body>
     
 
     <img src="Radiohead.png">
-    <p id = "text">RADIOHEAD</p>
-    <button onclick = "alert('Hello Mate!')">Hello</button>
-    <button onclick = "window.location.href = 'https://www.youtube.com/watch?v=BbWBRnDK_AE&list=RDBbWBRnDK_AE&start_radio=1'">Click here to listen to Radiohead</button>
-    <a href = contact.html>Here is another page</a>
-
+    <p id = "text">R A D I O H E A D</p>
+    <button id ="popup" onclick = "alert('Hello Mate!')">Hello</button>
+    <button id = "youtube" onclick = "location.href = 'https://www.youtube.com/watch?v=BbWBRnDK_AE&list=RDBbWBRnDK_AE&start_radio=1'" 
+    target = "_blank">Click here to listen to Radiohead</button>
+    <a id = "contact" href = contact.html>Here is another page</a>
+    <p id ="para">Radiohead is an English rock band formed in Abingdon-on-Thames in 1985. The band consists of Thom Yorke (vocals, guitar, piano), Jonny Greenwood (lead guitar, keyboard, other instruments), Colin Greenwood (bass), Ed O'Brien (guitar, backing vocals), and Philip Selway (drums, percussion). They have released nine studio albums, sold more than 30 million albums worldwide, and won three Grammy Awards from 20 nominations. Radiohead have been described by The New York Times as "the most important band of the 21st century".</p>
   </body>
 
 </html>
-
-
